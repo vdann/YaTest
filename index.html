@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Test form</title>
+	<meta charset="utf-8" />
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.error {
+			border: 1px solid red;
+		}
+
+		.success {
+			border: 1px solid green;
+		}
+
+		.progress1 {
+			border: 1px solid #ffd800;
+		}
+
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+
+
+		.container {
+		  width: auto;
+		  max-width: 680px;
+		  padding: 0 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<br>
+	<div class="container">
+
+		<div class="card">
+			<div class="card-block">
+				<form id="myForm" action="URL">
+					<div class="form-group row">
+						<label for="fio" class="col-2 col-form-label"> ФИО </label>
+						<div class="col-10">
+							<input class="form-control" name="fio" id="fio" type="text" />
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="email" class="col-2 col-form-label"> Email </label>
+						<div class="col-10">
+							<input class="form-control" name="email" type="text" />
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="phone" class="col-2 col-form-label">Телефон</label>
+						<div class="col-10">
+							<input class="form-control" name="phone" type="text" />
+						</div>
+					</div>
+
+					<input type="submit" class="btn btn-primary" id="submitButton" value="Отправить" />
+
+				</form>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="alert" id="resultContainer">
+		</div>
+
+
+	</div>
+
+	<script src="jquery-1.9.1.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
